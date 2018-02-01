@@ -71,6 +71,50 @@ h1 {
 }
 </style>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</aside>
+
+		
+<!--/ #wrap--></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+$(function() {
+			$('#slideR').hover(
+				function(){
+						$(this).animate({'marginRight':'140px'},500);
+				},
+				function () {
+						$(this).animate({'marginRight':'0'},500);
+				}
+		);
+});
+
+$('#slideL').on('click',function(){
+	if($('#slideL').hasClass('off')){
+		$('#slideL').removeClass('off');
+		$(this).animate({'marginLeft':'400px'},300).addClass('on');
+	}else{
+		$('#slideL').addClass('off');
+		$(this).animate({'marginLeft':'0px'},300);
+	}
+});
+
+$(document).ready(function(){
+	fit();
+	$(window).resize(function(){
+		fit();
+	})
+		function fit(){
+			var h = $(window).height();
+			$('.slide-inner').css("height",h);
+		}
+});
+</script>
+	
+	
 </head>
 
 <body background="img/kabe2.png">
@@ -178,69 +222,13 @@ margin-right: 0px;
 
 </div>
 
-
-
-
 		</p>
-
-
 
 
 		</blockquote>
 	</section>
 	</div>
 </div>
-
-
-
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</aside>
-
-		
-<!--/ #wrap--></div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>
-$(function() {
-			$('#slideR').hover(
-				function(){
-						$(this).animate({'marginRight':'140px'},500);
-				},
-				function () {
-						$(this).animate({'marginRight':'0'},500);
-				}
-		);
-});
-
-$('#slideL').on('click',function(){
-	if($('#slideL').hasClass('off')){
-		$('#slideL').removeClass('off');
-		$(this).animate({'marginLeft':'400px'},300).addClass('on');
-	}else{
-		$('#slideL').addClass('off');
-		$(this).animate({'marginLeft':'0px'},300);
-	}
-});
-
-$(document).ready(function(){
-	fit();
-	$(window).resize(function(){
-		fit();
-	})
-		function fit(){
-			var h = $(window).height();
-			$('.slide-inner').css("height",h);
-		}
-});
-</script>
-
-
-
-
-
 
 
 <footer>
