@@ -1,0 +1,117 @@
+﻿@charset"utf-8";
+//CSS Document
+
+<p title="TEXT GRADIENT"></p>
+p{
+ 	color:#text-shadow:0 1px 0 rgba(255,255,255,1),0 -1px 0 rgba(0,0,0,0,4);
+ }
+p:before{
+	color:#
+	-webkit-mask-image:-webkit-linear-gradient(45deg,
+	  rgba(0,0,0,0,5),
+	  rgba(0,0,0,0,5) 15%,
+	  rgba(0,0,0,0) 25%,
+	  rgba(0,0,0,0) 35%,
+	  rgba(0,0,0,0) 50%,
+	  rgba(0,0,0,0,5) 
+	  rgba(0,0,0,1) 75%,
+	  rgba(0,0,0,1) 85%,
+	  rgba(0,0,0,1)
+	);
+}
+p:after{
+	color:#;
+	-webkit-mask-image:-webkit-linear-gradient(45deg,
+	  rgba(0,0,0,0),
+	  rgba(0,0,0,0) 15%,
+	  rgba(0,0,0,0) 25%,
+	  rgba(0,0,0,0) 35%,
+	  rgba(0,0,0,0,5) 50%,
+	  rgba(0,0,0,0,8) 60%,
+	  rgba(0,0,0,0,5) 75%,
+	  rgba(0,0,0,0) 85%,
+	  rgba(0,0,0,0)
+	);
+}
+
+*{
+	margin:0;
+	pedding:0;
+}
+
+body	{
+	margin-top:auto;
+	font-size:45px;
+	
+}
+
+div#pagebody{
+	width:1000px;
+	height:247px;
+	margin:0 auto;
+	background-color:#FFFFFF;
+	//float:right;	
+}
+#index_img{
+	width:960px;
+	height:170px;
+	margin:80px 250px;
+}
+
+nav	{
+	width:400px;
+	height:50px;
+	vertical-align:middle;
+	margin:20px 0 0;
+	display:block;
+}
+
+nav ul	{
+	pedding:50px;
+	list-style-type:none;
+	font-size:0.75em;
+}
+
+nav ul li	{
+	list-style-type:none;
+	float:center;
+}
+
+nav ul li a{
+	background-color:#0000FF;
+	color:#FFFF00;
+	width:300px;
+	height:50px;
+	pedding:30px 0 0 0;
+	text-align:right;
+	text-decoration:none;
+	display:block;
+}
+
+nav ul li a:hover{
+	background-color:#0080FF;
+	
+}
+
+article{
+	margin:0 20px;
+}
+
+.index_infoimg{
+	width:200px;
+	height:300px;
+	margin:0 0 20px 20px;
+	float:right;
+}
+hr{
+	clear:both;
+}
+
+small{
+	font-size:25px;
+	text-align:right;
+	width:500px;
+	margin-left:auto;
+	margin-right:0px;
+	display:block;
+}
