@@ -1,0 +1,123 @@
+﻿body {
+    background: #f0ffff;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+
+}
+.ddmenu {
+    zoom: 1;
+    list-style-type: none;
+    width: 800px;
+    margin: 40px 0px 0px;
+    padding: 0;
+    position: fixed;
+}
+.ddmenu:before,.ddmenu:after{
+    content:"";
+    display:table;
+}
+.ddmenu::after{
+    clear:both;
+}
+.ddmenu li{
+    position:relative;
+    width:20%;
+    float:left;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.ddmenu li a{
+    display:block;
+    margin:0;
+    padding:15px 0 11px;
+    background:#8a9b0f;
+    color:#fff;
+    font-size:14px;
+    line-height:1;
+    text-decoration:none;
+}
+.ddmenu li ul{
+    list-style:none;
+    position:absolute;
+    z-index:9999;
+    top:100%;
+    left:0;
+    margin:0;
+    padding:0;
+}
+.ddmenu li ul li{
+    width:100%;
+}
+.ddmenu li ul li a{
+    padding:13px 10px;
+    border-top:1px solid #7c8c0e;
+    background:#6e7c0c;
+}
+.ddmenu li a:hover>a{
+    background:#6e7c0c;
+}
+.ddmenu li a:hover{
+    background:#616d0b;
+}
+    ul.ddmenu li:hover ul {
+        display: block;
+    }
+.bar {
+    position: relative;
+    padding: .5em.75em;
+    background-color: #e8e8e8;
+}
+.SI {
+    line-height: 28px;
+    font-size: 0.8rem;
+    color: #FFF;
+    background-color: #168565;
+    margin: 0;
+    padding: 0 0.5em;
+    float: left;
+    border-radius: 0;
+}
+.news {
+    line-height: 28px;
+    font-size: 0.8rem;
+    color: #FFF;
+    background-color: #168565;
+    margin: 0;
+    padding: 0 0.5em;
+    float: left;
+    border-radius: 0;
+}
+ul.ddmenu li ul {
+    visibility: hidden;
+    perspective: 400px;
+}
+ul.ddmenu li:hover ul {
+    visibility: visible;
+}
+ul.ddmenu ul li {
+    transform: rotateY(90deg);
+    transform-origin: 50% 0;
+    transition: .3s;
+}
+ ul.ddmenu li:hover li {
+    transform: rotateY(0);
+}
+ ul.ddmenu ul li:nth-child(2) {
+    transition-delay: .1s;
+}
+ul.ddmenu ul li:nth-child(3) {
+    transition-delay: .2s;
+}
+ul.ddmenu ul li:nth-child(4) {
+    transition-delay: .3s;
+}
+ul.ddmenu ul li:nth-child(5) {
+    transition-delay: .4s;
+}
+hgroup {
+    position: fixed;
+}
